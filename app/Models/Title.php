@@ -5,10 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Food extends Model
+class Title extends Model
 {
-    protected $table ='food_ingredients';
+    protected $table ='title';
     protected $guarded = [];
     use HasFactory;
 
+    public function title()
+    {
+    	return $this->hasOne(Food::class, 'id', 'id');
+    }
 }

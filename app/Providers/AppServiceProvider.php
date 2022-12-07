@@ -32,26 +32,6 @@ class AppServiceProvider extends ServiceProvider
                 'icon' => 'fas fa-home',
                 'active' => ['home'],
             ]);
-            $event->menu->add([
-                'text' => 'Food',
-                'url' => route('food.index'),
-                'icon' => '	far fa-circle',
-                'active' => ['food.index'],
-            ]);
-
-            $event->menu->add([
-                'text' => 'Ingridient',
-                'url' => route('ingridient.index'),
-                'icon' => '	far fa-circle',
-                'active' => ['ingridient.index'],
-            ]);
-
-            $event->menu->add([
-                'text' => 'Recomendation',
-                // 'url' => route('recomendation.index'),
-                // 'icon' => '	far fa-circle',
-                // 'active' => ['recomendation.index'],
-            ]);
         });
     }
 }

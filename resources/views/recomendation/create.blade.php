@@ -21,18 +21,6 @@
                 </div>
                 </a>
             </div>
-            <div class="col-lg-12 col-6">
-                <a href="{{ route('food.create') }}">
-                <div class="small-box bg-orange">
-                    <div class="inner text-center">
-                        <h1> <b style="color: rgb(255, 255, 255);"> ADD FOOD </b> <i class="fas fa-angle-double-right" style="color: rgb(255, 255, 255);"></i> </h1>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-file-invoice" style="color: rgb(255, 255, 255);"></i>
-                    </div>
-                </div>
-                </a>
-            </div>
         </div>
     </div>
     <div class="card-body">
@@ -45,16 +33,16 @@
                     <th> No. </th>
                     <th> Nama Makanan </th>
                     <th> Bahan </th>
+                    <th> Steps </th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($foods as $food)
-                    <tr>
-                        <td>{{ $food->id }}</td>
-                        <td>{{ $food->title }}</td>
-                        <td>{{ $food->ingredients }}</td>
-                    </tr>
-                @endforeach
+                <tr>
+                    <td>{{ $titles->id }}</td>
+                    <td>{{ $titles->titles }}</td>
+                    <td>{{ $titles->ingredients }}</td>
+                    <td>{{ $titles->steps }}</td>
+                </tr>
             </tbody>
         </table>
     </div>

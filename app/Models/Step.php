@@ -5,12 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Ingridient extends Model
+class Step extends Model
 {
+    protected $table ='steps';
+    protected $guarded = [];
     use HasFactory;
-
-    protected $table = 'ingridient';
-    public $guarded = [];
-
-    
 }

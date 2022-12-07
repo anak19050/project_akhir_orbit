@@ -5,10 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Food extends Model
+class Ingredient extends Model
 {
-    protected $table ='food_ingredients';
+    protected $table ='ingredients';
     protected $guarded = [];
     use HasFactory;
-
 }

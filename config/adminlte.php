@@ -14,7 +14,8 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'ReFood',
+    // 'title' => 'AdminLTE 3',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -63,8 +64,10 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    // 'logo' => '',
+    'logo' => '<b>Re</b>Food',
+    // 'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo_img' => 'kindpng_323133.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -86,7 +89,8 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+            // 'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+            'path' => 'kindpng_323133.png',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -109,7 +113,8 @@ return [
     'preloader' => [
         'enabled' => true,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+            // 'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+            'path' => 'kindpng_323133.png',
             'alt' => 'AdminLTE Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,
@@ -448,12 +453,12 @@ return [
                 [
                     'type' => 'js',
                     'asset' => true,
-                    'location' => '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js',
+                    'location' =>  'vendor/select2/select2.min.js',
                 ],
                 [
                     'type' => 'css',
                     'asset' => true,
-                    'location' => '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css',
+                    'location' =>  'vendor/select2/select2.min.js',
                 ],
             ],
         ],

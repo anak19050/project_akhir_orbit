@@ -2,10 +2,10 @@
 
 namespace App\Services\supports;
 
-use App\Services\IngridientService as SupportService;
+use App\Services\IngredientService as SupportService;
 use Illuminate\Support\Facades\Facade;
 
-class IngridientService extends Facade
+class IngredientService extends Facade
 {
 	/**
      * Get the registered name of the component.
